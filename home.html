@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOME</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body class="relative bg-gradient-to-r from-white to-blue-500 text-gray-800">
+
+  <!-- Header -->
+  <header class="w-full fixed top-0 flex justify-between items-center px-32 py-6 bg-gradient-to-r from-white to-blue-500 shadow-md z-10">
+    <!-- Logo -->
+    <a href="#" class="flex items-center">
+      <img src="./hero.png" alt="Logo" class="h-16 w-32">
+    </a>
+
+    <!-- Navigation -->
+    <nav class="space-x-8 uppercase text-sm font-medium">
+      <!-- <a href="#about" class="hover:text-gray-50"><i class="fas fa-info-circle mr-1"></i>About</a> -->
+      <!-- <a href="#gallery" class="hover:text-gray-50"><i class="fas fa-image mr-1"></i>Gallery</a> -->
+      <!-- <a href="#contacts" class="hover:text-gray-50"><i class="fas fa-envelope mr-1"></i>Contacts</a> -->
+      <a href="/userlog.html" class="hover:text-gray-50"><i class="fa-sharp fa-solid fa-circle-user mr-1"></i>Log In</a>
+      <a href="/services.html" class="hover:text-gray-50"><i class="fas fa-envelope mr-1"></i>SERVICES</a>
+      <a href="/contact.html" class="hover:text-gray-50"><i class="fas fa-envelope mr-1"></i>Contact</a>
+      <a href="/about.html" class="hover:text-gray-50"><i class="fas fa-info-circle mr-1"></i>ABOUT US</a> 
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between h-screen px-8 md:px-32 pt-40">
+    <!-- Left Content -->
+    <div class="max-w-xl mb-12 md:mb-0">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Our Site</h1>
+      <p class="mb-6 text-lg">
+        We create modern and convenient designs for your success. Explore our gallery and get in touch!
+      </p>
+      <a href="#about" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-red-600 transition">
+        <i class="fas fa-arrow-right mr-2"></i>Learn More
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+      <img src="./main_img1.jpeg" alt="Hero Image" class="w-[300px] md:w-[400px] h-[300px] md:h-[400px] object-cover rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-8 md:px-32 py-24 bg-white text-gray-800">
+    <h2 class="text-4xl font-bold mb-6">About Us</h2>
+    <p class="max-w-3xl mb-4">
+      We are a creative agency specializing in modern, responsive design that connects brands with their audiences. Our team crafts unique digital experiences tailored to your vision.
+    </p>
+    <p class="max-w-3xl">
+      Whether you need a stunning website, an engaging gallery, or a professional contact page, we have you covered.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="px-8 md:px-32 py-24">
+    <h2 class="text-4xl font-bold mb-12 text-white">Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <img src="https://source.unsplash.com/random/400x400?design" alt="Gallery Image 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+      <img src="https://source.unsplash.com/random/400x400?architecture" alt="Gallery Image 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+      <img src="https://source.unsplash.com/random/400x400?creative" alt="Gallery Image 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- Contacts Section -->
+  <section id="contacts" class="px-8 md:px-32 py-24 bg-white text-gray-800">
+    <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+    <p class="mb-4"><i class="fas fa-envelope mr-2"></i>Email: example@yourdomain.com</p>
+    <p class="mb-4"><i class="fas fa-phone mr-2"></i>Phone: +1 234 567 8900</p>
+    <p><i class="fas fa-map-marker-alt mr-2"></i>Address: 123 Creative Street, Design City</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-8 md:px-32 py-6 bg-gradient-to-r from-white to-blue-500 text-center text-sm">
+    &copy; 2025 Your Company. All rights reserved.
+  </footer>
+
+</body>
+</html>
